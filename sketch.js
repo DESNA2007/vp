@@ -54,14 +54,12 @@ function draw() {
   drawSprites();
 }
 
-//function to read food Stock
 function readStock(data){
   foodS=data.val();
   foodObj.updateFoodStock(foodS);
 }
 
 
-//function to update food stock and last fed time
 function feedDog(){
   dog.addImage(happyDog);
   
@@ -77,7 +75,6 @@ function feedDog(){
   })
 }
 
-//function to add food in stock
 function addFoods(){
   foodS++;
   database.ref('/').update({
